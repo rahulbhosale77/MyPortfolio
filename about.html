@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>About Me</title>
+
+   <!-- External CSS -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <!-- Internal CSS -->
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+         background-color: #fff;
+         margin: 0;
+         padding: 0;
+      }
+
+      .layout_padding {
+         padding: 60px 0;
+      }
+
+      .contact_taital {
+         font-size: 36px;
+         font-weight: 700;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+
+      .contact_taital_1 {
+         color: #007bff;
+      }
+
+      .about_image {
+         width: 150px;
+         height: 150px;
+         object-fit: cover;
+         border-radius: 50%;
+         margin: 20px auto;
+         display: block;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .about_description {
+         max-width: 750px;
+         margin: 0 auto;
+         font-size: 18px;
+         color: #555;
+         line-height: 1.6;
+         text-align: center;
+         padding: 20px;
+      }
+
+      .tools_section {
+         text-align: center;
+         padding: 40px 0;
+         background-color: #f8f9fa;
+      }
+
+      .tools_section h2 {
+         font-size: 30px;
+         font-weight: 600;
+         margin-bottom: 30px;
+      }
+
+      .tools_grid {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 40px;
+      }
+
+      .tool_item {
+         width: 120px;
+         text-align: center;
+      }
+
+      .tool_item img {
+         width: 50px;
+         height: 50px;
+         margin-bottom: 10px;
+      }
+
+      .tool_item p {
+         font-weight: 500;
+         font-size: 16px;
+         margin: 0;
+      }
+
+      .header_section {
+         position: relative;
+         z-index: 100;
+      }
+
+      nav.navbar {
+         position: relative;
+         z-index: 1000;
+      }
+   </style>
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<div class="header_section header_bg">
+   <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+         </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+               <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</div>
+<!-- Header End -->
+
+<!-- About Me Section -->
+<div class="contact_section layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1 class="contact_taital">About <span class="contact_taital_1">Me</span></h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <img src="images/profile.jpg" alt="Rahul Bhosale" class="about_image">
+            <p class="about_description">
+               I’m <strong>Rahul Bhosale</strong> – a passionate <strong>video editor</strong> and <strong>content creator</strong> who loves transforming raw footage into powerful stories. I specialize in documentary-style videos, motion graphics, subtitle syncing, and cinematic sound design. My mission is to tell real, relatable stories through editing that sparks emotions and engagement.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Tools Section -->
+<div class="tools_section">
+   <h2>Tools I Use</h2>
+   <div class="tools_grid">
+      <div class="tool_item">
+         <img src="images/icons/premiere-pro.png" alt="Premiere Pro">
+         <p>Premiere Pro</p>
+      </div>
+      <div class="tool_item">
+         <img src="images/icons/after-effects.png" alt="After Effects">
+         <p>After Effects</p>
+      </div>
+      <div class="tool_item">
+         <img src="images/icons/canva.png" alt="Canva">
+         <p>Canva</p>
+      </div>
+   </div>
+</div>
+
+<!-- Footer -->
+<div class="footer_section">
+   <div class="container">
+      <div class="location_text">
+         <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Kolhapur, India</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919049467913">+91 90494 67913</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:mr.rahul9049@gmail.com">mr.rahul9049@gmail.com</a></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/ig.rahul07" target="_blank">@ig.rahul07</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+<!-- JS Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
