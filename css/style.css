@@ -1088,7 +1088,7 @@ textarea#comment.massage-bt::placeholder {
 }
 
 /* Show on screens 767px and below */
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 800px) {
    .banner_profile_mobile {
       display: block;
    }
