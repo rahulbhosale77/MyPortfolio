@@ -241,6 +241,9 @@ button {
     background: #000;
 }
 
+
+ 
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -1068,4 +1071,25 @@ textarea#comment.massage-bt::placeholder {
 
 .margin_90{
     margin: 90px 0px;
+}
+.banner_profile_mobile {
+   text-align: left;
+   margin-top:50px;
+   display: none;
+}
+
+.banner_profile_mobile img {
+   width: 200px;
+   height: 200px;
+   border-radius: 10%;
+   object-fit: cover;
+   border: 3px solid #fff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Show on screens 767px and below */
+@media screen and (max-width: 455px) {
+   .banner_profile_mobile {
+      display: block;
+   }
 }
