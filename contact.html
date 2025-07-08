@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Contact</title>
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header section -->
+<div class="header_section header_bg">
+   <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+         </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+               <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</div>
+<!-- Header end -->
+
+<!-- Contact section -->
+   <div class="contact_section layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
+         </div>
+      </div>
+      <div class="contact_section_2">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="mail_section_1">
+                  <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
+                  <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
+                  <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
+                  <textarea class="massage-bt" placeholder="Your Message" rows="5" name="Your Massage"></textarea>
+                  <div class="send_bt">
+                     <a id="sendEmailButton" href="#">Send Now</a>
+                  </div>
+                   <div class="send_bt">
+                        <a href="https://wa.me/919049467913" target="_blank" title="WhatsApp">WhatsApp me
+               <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+                  </div>
+                 
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Contact end -->
+
+<!-- Footer section -->
+<!-- Footer section start -->
+<div class="footer_section">
+   <div class="container">
+      <div class="location_text">
+         <ul>
+            <li>
+               <i class="fa fa-map-marker" aria-hidden="true"></i>
+               Kolhapur, India
+            </li>
+            <li>
+               <i class="fa fa-phone" aria-hidden="true"></i>
+               <a href="tel:+919049467913">+91 90494 67913</a>
+            </li>
+            <li>
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+               <a href="mailto:mr.rahul9049@gmail.com">mr.rahul9049@gmail.com</a>
+            </li>
+            <li>
+               <i class="fa fa-instagram" aria-hidden="true"></i>
+               <a href="https://instagram.com/ig.rahul07" target="_blank">@ig.rahul07</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+<!-- Footer section end -->
+
+<!-- Footer end -->
+
+<!-- Copyright section -->
+ 
+
+<!-- JS scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Email Script -->
+<script>
+   document.getElementById("sendEmailButton").addEventListener("click", function () {
+      const name = document.querySelector('input[name="Your Name"]').value;
+      const email = document.querySelector('input[name="Your Email"]').value;
+      const phone = document.querySelector('input[name="Your Phone"]').value;
+      const message = document.querySelector('textarea[name="Your Massage"]').value;
+
+      const subject = encodeURIComponent("Message from Portfolio Contact Form");
+      const body = encodeURIComponent(
+         `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
+      );
+
+      window.location.href = `mailto:mr.rahul9049@gmail.com?subject=${subject}&body=${body}`;
+   });
+</script>
+
+</body>
+</html>
