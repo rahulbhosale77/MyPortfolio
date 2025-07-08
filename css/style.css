@@ -1079,9 +1079,9 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .banner_profile_mobile img {
-   width: 200px;
-   height: 200px;
-   border-radius: 10%;
+   width: 600px;
+   height: 280px;
+   border-radius: 50%;
    object-fit: cover;
    border: 3px solid #fff;
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
